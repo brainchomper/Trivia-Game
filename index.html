@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,55 @@
 	<link rel="stylesheet" href="./assets/css/bootstrap.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<audio id="my_audio" src="./assets/sounds/Futurama-Theme.mp3" loop="loop"></audio>
 </head>
-<body>
-	
 
+<body onload="getYear()">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="../../index.html">
+								<img src="./assets/images/logo.png" alt="Kevin Smith">
+							</a>
+						</div>
+						<div id="navbar2" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="https://brainchomper.github.io">Home</a>
+								</li>
+								<li class="active">
+									<a href="https://brainchomper.github.io/portfolio.html">Portfolio</a>
+								</li>
+								<li>
+									<a href="https://brainchomper.github.io/contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+						<!--/.nav-collapse -->
+					</div>
+					<!--/.container-fluid -->
+				</nav>
+		<div class="container mainGame">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur minus soluta. Dolorem labore odio et reiciendis
+			commodi, adipisci laboriosam magnam. Nemo ullam illo quae sunt! Esse quia temporibus nostrum!</div>
+	</div>
 
-	<script src="./assets/js/game.js"></script>
+	<footer>
+		<p>&copy;
+			<span id="btmfooter"></span> Kevin Smith</p>
+		<script>
+			function getYear() {
+				var d = new Date();
+				var n = d.getFullYear();
+				document.getElementById("btmfooter").innerHTML = n;
+			}
+		</script>
+		<script src="./assets/js/game.js"></script>
 </body>
+
 </html>

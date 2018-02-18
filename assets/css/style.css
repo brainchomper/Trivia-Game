@@ -1,3 +1,46 @@
 html {
 	font-family: 'Roboto', sans-serif;
 }
+body {
+	background-image: url("../images/futurama2.jpg")
+}
+.navbar-brand>img {
+	padding-left: 20px;
+  height: 100%;
+	width: auto;
+}
+.navbar-nav {
+	padding: 20px;
+}
+.navbar-brand {
+	height: 100%;
+}
+.navbar-nav:focus{
+		height: 100%;
+	
+
+	height: 100%;
+}
+.mainGame{
+	opacity: 10%;
+	background-color: whitesmoke; 
+	opacity: 10%;
+	width: 90%;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+footer {
+	border-top: solid 1px steelblue;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	color: white;
+	background-color: grey;
+	width: 100%;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+}
+footer:hover {
+	color: steelblue;
+}
