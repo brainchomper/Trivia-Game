@@ -1,8 +1,11 @@
 html {
 	font-family: 'Roboto', sans-serif;
 }
-p,h1,h2,h3,h4,h5{
+p,h3,h4,h5{
 	color: black;
+}
+h1,h2{
+	color: whitesmoke;
 }
 body {
 	background-image: url("../images/fbg.jpg");
@@ -16,7 +19,6 @@ body {
 	height: 100%;
 	width: auto;
 }
-
 .navbar-nav {
 	padding: 20px;
 }
@@ -31,40 +33,37 @@ body {
 }
 
 .mainGame {
-	opacity: 10%;
-	background-color: mediumspringgreen;
+	background-color: steelblue;
 	width: 60%;
 	padding: 20px;
 	margin-top: 20px;
 	margin-bottom: 50px;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 80px;
 }
-
 .btn-primary, .reset {
-	background-color: lightsalmon;
+	background-color: indianred;
 	color: white;
 	font-size: 30px;
 	padding: 20px;
-	border-radius: 20px;
+	border-radius: 80px;
 	/* margin-top: 100px; */
 }
 
 .btn-primary:hover, .reset:hover {
-	background-color: lightsalmon;
-}
-
-.image {
-	border-radius: 20px;
+	background-color: indianred;
 }
 
 .thisChoice {
 	padding: 10px;
+	border: black, solid, 10px;
 }
 
 .thisChoice:hover {
-	background-color: lightsalmon;
+	background-color: indianred;
 	color: white;
+	border-radius: 80px;
+	border: solid, black, 5px;
 	padding: 10px;
 }
 
@@ -82,4 +81,9 @@ footer {
 
 footer:hover {
 	color: steelblue;
+}
+@media screen and (max-width: 640px) {	
+	.mainGame {
+		width: 100%;
+	}
 }

@@ -67,10 +67,10 @@ $('#startBtn').on('click', function () {
 	$('.title').hide();
 	newGame();
 });
-$('#correctImage').on("click", function(){
-	seconds=0;
-	newQuestion()
-	});
+// $('#correctImage').on("click", function(){
+// 	seconds=0;
+// 	newQuestion()
+// 	});
 //reset btn
 $('#restartBtn').on('click', function () {
 	$(this).hide();
@@ -141,7 +141,7 @@ function answerPage() {
 
 	var rightAnswerText = questionList[currentQuestion].answerList[questionList[currentQuestion].answer];
 	var rightAnswerIndex = questionList[currentQuestion].answer;
-	$('#correctImage').html('<img src = "assets/images/' + imgArray[currentQuestion] + '.gif" width = "350px" class="image">');
+	$('#correctImage').html('<img src = "assets/images/' + imgArray[currentQuestion] + '.gif" width = "350px" class="img-responsive">');
 	//checks to see correct, incorrect, or unanswered
 	if ((selected == rightAnswerIndex) && (answered == true)) {
 		correctAnswer++;
@@ -149,11 +149,11 @@ function answerPage() {
 	} else if ((selected != rightAnswerIndex) && (answered == true)) {
 		incorrectAnswer++;
 		$('#message').html(messages.incorrect);
-		$('#correctAnswer').html('The correct answer was: ' + rightAnswerText);
+		$('#correctAnswer').html('<h3>The correct answer was: ' + rightAnswerText +'</h2>');
 	} else {
 		unanswered++;
 		$('#message').html(messages.endTime);
-		$('#correctAnswer').html('The correct answer was: ' + rightAnswerText);
+		$('#correctAnswer').html('<h3>The correct answer was: ' + rightAnswerText +'</h2>');
 		answered = true;
 	}
 
