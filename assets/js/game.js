@@ -49,7 +49,7 @@ var imgArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var currentQuestion;
 var wrongAnswer;
 var incorrectAnswer;
-var unanswered;
+var unanswered = 0;
 var seconds;
 var time;
 var answered;
@@ -86,6 +86,7 @@ function newGame() {
 	correctAnswer = 0;
 	wrongAnswer = 0;
 	unanswered = 0;
+	incorrectAnswer = 0;
 	newQuestion();
 }
 
@@ -169,7 +170,8 @@ function scoreboard() {
 	$('#message').empty();
 	$('#correctAnswer').empty();
 	$('#correctImage').empty();
-
+console.log(unanswered);
+console.log(incorrectAnswer);
 	$('#finalMessage').html(messages.finished);
 	$('#correctCount').html("Correct Answers: " + correctAnswer);
 	$('#wrongCount').html("Incorrect Answers: " + incorrectAnswer);
