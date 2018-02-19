@@ -9,7 +9,6 @@ h1,h2,h3{
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 body {
-	background-image: url("../images/bg.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: black;
@@ -34,16 +33,17 @@ body {
 }
 
 .mainGame {
-	background-color: steelblue;
+	background-color: #7aa1a6;
 	width: 60%;
 	padding: 20px;
 	margin-top: 20px;
 	margin-bottom: 50px;
 	text-align: center;
 	border-radius: 80px;
+	border: 5px solid #9a003e;
 }
 .btn-primary, .reset {
-	background-color: indianred;
+	background-color: #5e2866;
 	color: white;
 	font-size: 30px;
 	padding: 20px;
@@ -52,7 +52,7 @@ body {
 }
 
 .btn-primary:hover, .reset:hover {
-	background-color: indianred;
+	background-color: #fb710c;
 }
 
 .thisChoice {
@@ -61,7 +61,7 @@ body {
 }
 
 .thisChoice:hover {
-	background-color: indianred;
+	background-color: #5e2866;
 	color: white;
 	border-radius: 80px;
 	border: solid, black, 5px;
@@ -81,7 +81,7 @@ footer {
 }
 
 footer:hover {
-	color: steelblue;
+	color: #7aa1a6;
 }
 @media screen and (max-width: 640px) {	
 	.mainGame {
