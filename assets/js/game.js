@@ -98,7 +98,7 @@ function newQuestion() {
 	$('.listOfAnswers').empty();
 	answered = true;
 
-	$('#currentQuestion').html('Question #' + (currentQuestion + 1) + '/' + questionList.length);
+	$('#currentQuestion').html('Question # ' + (currentQuestion + 1) + ' / ' + questionList.length);
 	$('.question').html('<h2>' + questionList[currentQuestion].question + '</h2>');
 	for (var i = 0; i < 4; i++) {
 		var choices = $('<div>');
@@ -170,8 +170,6 @@ function scoreboard() {
 	$('#message').empty();
 	$('#correctAnswer').empty();
 	$('#correctImage').empty();
-console.log(unanswered);
-console.log(incorrectAnswer);
 	$('#finalMessage').html(messages.finished);
 	$('#correctCount').html("Correct Answers: " + correctAnswer);
 	$('#wrongCount').html("Incorrect Answers: " + incorrectAnswer);
