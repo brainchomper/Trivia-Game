@@ -1,42 +1,42 @@
 var questionList = [{
-	question: " When did fry get cryogenically frozen?",
-	answerList: ["2210", "1999", "2000", "2006"],
+	question: " What year was Fry cryogenically frozen?",
+	answerList: ["1998", "1999", "2000", "2001"],
 	answer: 1
 }, {
-	question: "What Species is Zoidberg?",
-	answerList: ["Amazonian", "Nibblonian", "Brain Slug", "Decapodian"],
+	question: "What species is Zoidberg?",
+	answerList: ["Trisolian", "Nibblonian", "Shrimpkins‎", "Decapodian"],
 	answer: 3
 }, {
-	question: "What Food Did Fry Deliver in the 20th century?",
-	answerList: ["Coffee", "Chinese", "Pizza", "Tacos"],
+	question: "What was Fry' first job?",
+	answerList: ["Fishy Joe's", "O'Grady's Pub", "Panucci's Pizza", "Limburger King"],
 	answer: 2
 }, {
 	question: "Where is Amy From?",
-	answerList: ["Brooklin", "Mars", "China", "Centari B"],
+	answerList: ["Brooklin", "Mars", "Omicron Persei 8", "Wormulon"],
 	answer: 1
 }, {
 	question: "Who did Amy marry?",
-	answerList: ["Kif Kroker", "Hypno Toad", "Zog", "Morbo"],
+	answerList: ["Kif", "Fnog", "Kug", "Yivo"],
 	answer: 0
 }, {
-	question: "What is the Ship Zapp Brannigan captains?",
+	question: "What vessel does Zapp Brannigan captain?",
 	answerList: ["Planet Express Ship", "Land Titanic", "Kitten Class Attack Ship", "The Nimbus"],
 	answer: 3
 }, {
-	question: "What is Nibler's Poo Made Out of?",
-	answerList: ["Gold", "Dark Matter", "Uranium", "Antimatter"],
-	answer: 1
-}, {
-	question: "What century is Futurama set in?",
-	answerList: ["21st Century", "24th Century", "30th Century", "40th Century"],
+	question: "What does Nibler Poo?",
+	answerList: ["Gold", "Uranium", "Dark Matter", "Anti-Matter"],
 	answer: 2
 }, {
-	question: "Who Was the creator of Futurama?",
-	answerList: ["Chris Sanders", "Matt Groening", "Dan Harmon", "Walt Disney"],
+	question: "What century is Futurama set in?",
+	answerList: ["21st Century", "24th Century", "30th Century", "41th Century"],
+	answer: 2
+}, {
+	question: "Who was the creator of Futurama?",
+	answerList: ["Billy West", "Matt Groening", "Dan Harmon", "John DiMaggio"],
 	answer: 1
 }, {
 	question: "What is the name of the Planet Express's Janitor?",
-	answerList: ["Hermes", "Cubert", "Agnew", "Scruffy"],
+	answerList: ["Beni", "Vernon", "Curly", "Scruffy"],
 	answer: 3
 }];
 var messages = {
@@ -82,6 +82,7 @@ function newGame() {
 	$('#correctCount').empty();
 	$('#wrongCount').empty();
 	$('#notAnswered').empty();
+	$('#ender').empty();
 	currentQuestion = 0;
 	correctAnswer = 0;
 	wrongAnswer = 0;
@@ -174,6 +175,7 @@ function scoreboard() {
 	$('#correctCount').html("Correct Answers: " + correctAnswer);
 	$('#wrongCount').html("Incorrect Answers: " + incorrectAnswer);
 	$('#notAnswered').html("Unanswered: " + unanswered);
+	$('#ender').html('<img src="./assets/images/ender.gif" alt="Ending Gif" class="img-responsive">');
 	$('#restartBtn').addClass('reset');
 	$('#restartBtn').show();
 	$('#restartBtn').html('Start Over?');
