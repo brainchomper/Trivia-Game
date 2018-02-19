@@ -42,7 +42,6 @@ var questionList = [{
 var messages = {
 	correct: "<h2>You Got It!</h2>",
 	incorrect: "<h2>Wrong, Be Better!</h2>",
-	noTime: "<h2>You Ran Out Of Time!</h2>",
 	finished: "<h2>You're Done, Let's See How You Did!</h2>"
 }
 var imgArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];

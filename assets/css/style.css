@@ -1,7 +1,7 @@
 html {
 	font-family: 'Roboto', sans-serif;
 }
-p,h4,h6{
+h4,h6{
 	color: black;
 }
 h1,h2,h3,h5{
@@ -71,19 +71,14 @@ title {
 }
 
 footer {
-	border-top: solid 1px paleturquoise;
 	padding: 10px 0px 0px 0px;
 	text-align: center;
-	color: white;
-	background-color: grey;
+	color: whitesmoke;
+	background-color: #9a003e;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-}
-
-footer:hover {
-	color: #7aa1a6;
 }
 @media screen and (max-width: 640px) {	
 	.mainGame {
